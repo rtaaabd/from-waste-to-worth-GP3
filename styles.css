@@ -42,3 +42,22 @@ footer{max-width:1200px;margin:auto;padding:23px 24px;display:flex;justify-conte
 .subpage{max-width:900px;margin:80px auto;padding:0 24px}.subpage .panel{background:white;border:1px solid var(--line);border-radius:18px;padding:28px}.subpage h1{font-size:48px}.subpage p{color:var(--muted)}.back{display:inline-block;margin-top:18px;color:var(--green);font-weight:800;font-size:12px}
 @media(max-width:980px){.hero-inner,.split,.project-grid{grid-template-columns:1fr}.team-grid{grid-template-columns:repeat(2,1fr)}.docs-grid{grid-template-columns:repeat(2,1fr)}nav{display:none;position:absolute;left:16px;right:16px;top:70px;background:white;border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:var(--shadow);flex-direction:column}.menu-btn{display:block}nav.open{display:flex}.contact{grid-template-columns:1fr}.email{min-width:0}}
 @media(max-width:620px){.hero-inner{padding:62px 18px 72px}.section{padding:68px 18px}.team-grid,.docs-grid{grid-template-columns:1fr}h1{font-size:55px}.nav-wrap{padding:12px 18px}.brand strong{font-size:13px}.contact{padding:22px}footer{flex-direction:column;gap:4px}}
+
+.web-gantt{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 10px 30px rgba(25,45,33,.05)}
+.gantt-header,.gantt-item{display:grid;grid-template-columns:230px 1fr;align-items:center}
+.gantt-header{background:#f5f8f5;border-bottom:1px solid var(--line);font-size:10px;font-weight:850;text-transform:uppercase;letter-spacing:.08em}
+.gantt-header>div,.gantt-label{padding:13px 16px}
+.gantt-months{display:grid;grid-template-columns:.7fr 1.4fr 1.4fr;text-align:center;padding:0 8px!important}
+.gantt-item{border-bottom:1px solid #edf1ed}
+.gantt-item:last-child{border-bottom:0}
+.gantt-label strong,.gantt-label small{display:block}
+.gantt-label strong{font-size:12px}
+.gantt-label small{font-size:10px;color:var(--muted);margin-top:2px}
+.gantt-line{position:relative;height:50px;background:
+linear-gradient(to right,transparent 20%,#e7ece8 20.2%,transparent 20.4%),
+linear-gradient(to right,transparent 60%,#e7ece8 60.2%,transparent 60.4%),
+repeating-linear-gradient(to right,#fbfcfa 0,#fbfcfa calc(5% - 1px),#f0f3f0 calc(5% - 1px),#f0f3f0 5%)}
+.gbar{position:absolute;top:15px;height:20px;border-radius:7px;background:#8db89b}
+.gbar.completed{background:#5e9a72}
+.gbar.current{background:#c97b3f;box-shadow:0 0 0 3px rgba(201,123,63,.12)}
+@media(max-width:700px){.gantt-header,.gantt-item{grid-template-columns:135px 1fr}.gantt-header>div,.gantt-label{padding:10px}.gantt-label strong{font-size:10px}.gantt-label small{font-size:9px}.gantt-line{height:46px}}
